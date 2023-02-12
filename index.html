@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/world.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+
+    <title>Country Curious</title>
+  </head>
+  <body>
+    <header class="header">
+      <article class="header__container">
+        <svg class="header__icon">
+          <use xlink:href="assets/globe.svg#earth-globe"></use>
+        </svg>
+
+        <h1 class="header__heading">Country Curious</h1>
+
+        <svg class="header__icon icon--right">
+          <use xlink:href="assets/globe.svg#earth-globe"></use>
+        </svg>
+      </article>
+    </header>
+
+    <main class="main">
+      <article class="search">
+        <form class="search__form" action="#">
+          <label class="search__label" for="country"
+            >Search for a country:</label
+          >
+          <input
+            class="search__input"
+            id="country"
+            name="country"
+            type="text"
+            placeholder="E.g, Italy"
+          />
+        </form>
+      </article>
+      <article class="country">
+        <article class="country__container"></article>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <article class="footer__container">
+        <h2 class="footer__heading">Country Curious</h2>
+        <p class="footer__copyright">&copy; Duncan Bounds 2022</p>
+      </article>
+    </footer>
+  </body>
+</html>
